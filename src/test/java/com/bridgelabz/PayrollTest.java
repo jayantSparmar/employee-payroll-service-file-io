@@ -6,7 +6,16 @@ import java.util.Arrays;
 
 @SuppressWarnings("deprecation")
 public class PayrollTest {
+UC5-ShowNumberOfEntries
+    @Test
+    public void given3EmployeesWhenWrittenToFileShouldMatchEmployeeEntries() {
+        EmployeePayrollData[] arrayOfEmps = { new EmployeePayrollData(1, 25000.56, "Jayant Singh Parmar"),
+                new EmployeePayrollData(2, 15000.65, "Ashvini Kanojiya"),
+                new EmployeePayrollData(3, 22000.67, "Shubham Pawar") };
+    };
 
+
+ master
     @Test
     public void given3EmployeesWhenWrittenToFileShouldMatchEmployeesEntries() {
         EmployeePayrollData[] arrayOfEmps = { new EmployeePayrollData(1, 25000.56, "Jayant Singh Parmar"),
