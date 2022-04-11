@@ -1,5 +1,4 @@
 package com.bridgelabz;
-
 /**
  * import classes
  */
@@ -13,10 +12,11 @@ import java.util.*;
  * create a class name as EmployeePayrollFileIOService
  */
 public class EmployeePayrollFileIOService {
-    public static String PAYROLL_FILE_NAME =("G:\\user\\employee-payroll-service-file-io\\src\\main\\java\\com\\bridgelabz");
+    public static String PAYROLL_FILE_NAME = ("C:\\Users\\admin\\Desktop\\java\\Day27EmployeePayrollService\\Java_Day27_EmployeePayrollService_FileIO\\src\\main\\java\\com\\day27\\payroll-file.txt");
 
     /**
      * create a method name as  writeData
+     *
      * @param employeePayrollList all data save
      */
     public void writeData(List<EmployeePayrollData> employeePayrollList) {
@@ -40,6 +40,7 @@ public class EmployeePayrollFileIOService {
 
     /**
      * create a method name as countEntries
+     *
      * @param employeePayrollList all data store in this
      * @return enteries
      */
@@ -51,5 +52,13 @@ public class EmployeePayrollFileIOService {
             e.printStackTrace();
         }
         return entries;
+    }
+
+    public void printData(List<EmployeePayrollData> employeePayrollList) {
+        try {
+            Files.lines(new File(PAYROLL_FILE_NAME).toPath()).forEach(System.out::println);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
