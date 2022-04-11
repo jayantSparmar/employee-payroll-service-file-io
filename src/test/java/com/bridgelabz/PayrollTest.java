@@ -9,9 +9,9 @@ import java.util.Arrays;
 public class PayrollTest {
     @Test
     public void given3EmployeesWhenWrittenToFileShouldMatchEmployeeEntries() {
-        EmployeePayrollData[] arrayOfEmps = { new EmployeePayrollData(1, 25000.56, "Devnandan Kumar"),
-                new EmployeePayrollData(2, 15000.65, "Manoj Kumar"),
-                new EmployeePayrollData(3, 22000.67, "Abhishek sinha") };
+        EmployeePayrollData[] arrayOfEmps = { new EmployeePayrollData(1, 25000.56, "Jayant Singh Parmar"),
+                new EmployeePayrollData(2, 15000.65, "Ashvini Kanojiya"),
+                new EmployeePayrollData(3, 22000.67, "Shubham Pawar") };
     };
     @Test
     public void given3EmployeesWhenWrittenToFileShouldMatchEmployeesEntries() {
