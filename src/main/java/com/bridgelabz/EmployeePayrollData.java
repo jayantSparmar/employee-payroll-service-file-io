@@ -1,5 +1,4 @@
 package com.bridgelabz;
-
 public class EmployeePayrollData {
     /**
      * private variables can only be accessed within the same class (an outside class has no access to it)
@@ -100,3 +99,4 @@ public class EmployeePayrollData {
     }
 
 }
+
